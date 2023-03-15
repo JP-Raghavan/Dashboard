@@ -1,1 +1,47 @@
-This Dashboard will help the users to get know which one is in use currently
+<html>
+<head>
+	<title>My Dashboard</title>
+	<style>
+		.container {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 20px;
+		}
+		.item {
+			background-color: #f2f2f2;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+			text-align: center;
+		}
+		.item:hover {
+			cursor: pointer;
+			background-color: #ddd;
+		}
+		.item.active {
+			background-color: #00c853;
+			color: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		}
+	</style>
+	<script>
+		function toggleActive(element) {
+			const items = document.querySelectorAll('.item');
+			items.forEach(item => {
+				if (item !== element) {
+					item.classList.remove('active');
+				}
+			});
+			element.classList.toggle('active');
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="item" onclick="toggleActive(this)">VM80</div>
+		<div class="item" onclick="toggleActive(this)">VM81</div>
+		<div class="item" onclick="toggleActive(this)">VM82</div>
+		<div class="item" onclick="toggleActive(this)">VM83</div>
+	</div>
+</body>
+</html>
