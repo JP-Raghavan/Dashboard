@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<title>My Dashboard</title>
@@ -39,10 +38,10 @@
 </head>
 <body>
 	<div class="container">
-		<div class="item" onclick="toggleActive(this)">Item 1</div>
-		<div class="item" onclick="toggleActive(this)">Item 2</div>
-		<div class="item" onclick="toggleActive(this)">Item 3</div>
-		<div class="item" onclick="toggleActive(this)">Item 4</div>
+		<div class="item" onclick="toggleActive(this)">VM80</div>
+		<div class="item" onclick="toggleActive(this)">VM81</div>
+		<div class="item" onclick="toggleActive(this)">VM82</div>
+		<div class="item" onclick="toggleActive(this)">VM83</div>
 	</div>
 </body>
 </html>
